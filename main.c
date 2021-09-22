@@ -9,7 +9,7 @@ SDL_Renderer *renderer = NULL;
 
 void initSDL() {
 	assert(SDL_Init(SDL_INIT_EVERYTHING) >= 0);
-	window = SDL_CreateWindow("Rasterizer", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("Cube", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
 	assert(window);
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);
 	assert(renderer);
